@@ -1154,12 +1154,18 @@ Facts Style
 ---------------------------------------------
 Team Style
 --------------------------------------------- 
+
 */
 
 .team {
-  margin-top: 100px;
-    padding-top: 140px;
+  margin-top: 0px;
+  padding-top: 110px;
 }
+.team .section-heading {
+  margin-bottom: 70px;
+  text-align: center; /* Add this line to center the text */
+}
+
 
 .team-member {
   position: relative;
@@ -1170,25 +1176,25 @@ Team Style
 }
 
 .team-member img {
-  max-width: 220px;
+  max-width: 250px; /* Ensure the image fits within the container */
   border-radius: 50%;
-  position: absolute;
-  top: -110px;
-  left: 50%;
-  transform: translateX(-110px);
+  display: block; /* Use block display to properly center the image */
+  margin: 15px auto; /* Center the image horizontally */
   transition: all .3s;
 }
 
+
 .team-member .main-content {
-  border-radius: 25px;
-  padding: 140px 30px 40px 30px;
+  border-radius: 20px;
+  padding: 30px 5px 30px 3px;
   background-color: #f1f0fe;
   text-align: center;
 }
 
 .team-member .main-content span.category {
-  color: #9BB9AF  ;
+  color: #9BB9AF;
   font-size: 15px;
+  margin-top: 10px; /* Adjust the margin-top value */
 }
 
 .team-member .main-content h4 {
@@ -1219,6 +1225,31 @@ Team Style
 .team-member .main-content ul li a:hover {
   background-color: #9BB9AF  ;
   color: #fff;
+}
+/* Custom styles for carousel navigation arrows */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px; /* Adjust the width of the arrows as needed */
+  height: 50px; /* Adjust the height of the arrows as needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Background color of the arrows */
+  border-radius: 50%; /* Make the arrows circular */
+  top: 50%; /* Vertically center the arrows */
+  transform: translateY(-50%); /* Vertically center the arrows */
+}
+
+/* Custom styles for the arrow icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent; /* Remove the default icon background color */
+  color: #fff; /* Icon color */
+  font-size: 24px; /* Icon size */
+  line-height: 50px; /* Vertically center the icon */
+}
+
+/* Hover styles for the arrows */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Hover background color */
 }
 
 
@@ -1405,8 +1436,8 @@ Events Style
 
 .events .item a {
   position: absolute;
-  right: 0;
-  top: 22px;
+  right: -28px;
+  top: -16px;
   background-color: #9BB9AF  ;
   width: 60px;
   height: 120px;
