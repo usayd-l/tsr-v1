@@ -347,6 +347,16 @@ Header Style
   height: auto;
 }
 
+@media (max-width: 767px) {
+  .header-area .main-nav .logo {
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    margin: 20px auto; /* Center the logo vertically */
+  }
+}
+
 
 .background-header .main-nav .logo,
 .background-header .main-nav #search {
